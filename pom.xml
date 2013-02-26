@@ -15,6 +15,10 @@
 
 	<repositories>
 		<repository>
+			<id>gcm-server-repository</id>
+			<url>https://raw.github.com/slorber/gcm-server-repository/master/releases/</url>
+		</repository>
+		<repository>
 			<id>maven.kungfuters.org</id>
 			<url>http://maven.kungfuters.org/content/groups/public/</url>
 		</repository>
