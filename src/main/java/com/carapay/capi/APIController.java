@@ -43,6 +43,7 @@ public class APIController {
 		Message message = new Message.Builder().addData("SharedSecret", sharedSecret).build();
 		Result result = sender.send(message, regId, 3);
 
+		response.setContentType("text/html;charset=UTF-8");
 		if (result.getMessageId() != null) {
 			String canonicalRegId = result.getCanonicalRegistrationId();
 			if (canonicalRegId != null) {
@@ -70,7 +71,7 @@ public class APIController {
 		
 		//Strip any spaces in the regId;
 		regId = regId.replace(" ", "");
-		
+		response.setContentType("text/html;charset=UTF-8");
 		try {
 			InputStream certIs = Thread.currentThread().getContextClassLoader().getResourceAsStream(IOS_CERT);
 			PushedNotifications nots =  Push.alert(sharedSecret, certIs, IOS_CERT_PASS, false, regId).getSuccessfulNotifications();
