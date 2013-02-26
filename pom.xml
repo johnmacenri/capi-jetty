@@ -13,17 +13,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-	<repositories>
-		<repository>
-			<id>gcm-server-repository</id>
-			<url>https://raw.github.com/slorber/gcm-server-repository/master/releases/</url>
-		</repository>
-		<repository>
-			<id>maven.kungfuters.org</id>
-			<url>http://maven.kungfuters.org/content/groups/public/</url>
-		</repository>
-	</repositories>
-
     <dependencies>
         <!-- Servlet API -->
         <dependency>
@@ -84,7 +73,7 @@
 		<dependency>
 			<groupId>com.googlecode.json-simple</groupId>
 			<artifactId>json-simple</artifactId>
-			<version>1.1</version>
+			<version>1.1.1</version>
 		</dependency>
 
 		<!-- APNS -->
